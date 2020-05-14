@@ -1,0 +1,20 @@
+body{
+    position: absolute; left: 50%; transform: translateX(-50%);
+}
+p{
+    font-family: 'Jeju Gothic', sans-serif;
+    font-size: 13px;
+    text-align: center;
+}
+textarea{
+    border-radius: 5px;
+    border: solid 3px black;
+}
+input{
+    font-family: 'Jeju Gothic', sans-serif;
+    font-size: 10px;
+    padding:3px;
+    border-radius: 3px;
+    background-color:#ffd108;
+    margin-left: 45%;
+}

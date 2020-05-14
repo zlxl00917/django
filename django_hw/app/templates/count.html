@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static%}
+    <link rel="stylesheet" type="text/css" href="{%static 'count.css'%}">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/jejugothic.css">
+    <title>Document</title>
+</head>
+<body>
+    <p>텍스트를 입력해주세요.</p>
+    <form action="{% url 'result' %}" method="POST">{% csrf_token %}
+        <textarea name="text" cols="60" rows="10"></textarea>
+        <br>
+        <input type="submit" value="제출하기">
+    </form>
+</body>
+</html>

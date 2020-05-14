@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static%}
+    <link rel="stylesheet" type="text/css" href="{%static 'result.css'%}">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/jejugothic.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="count">
+        <div class="count__text">
+            {{text}}
+        </div>
+        <div class="count__detail">
+            <div class="detail">
+                <p>공백포함</p>
+                <div class="detail__value">{{total_len}}</div>
+            </div>
+            <div class="detail">
+                <p>공백제외</p>
+                <div class="detail__value">{{no_blank_len}}</div>
+            </div>
+            <div class="detail">
+                <p>단어개수</p>
+                <div class="detail__value">{{word}}</div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
